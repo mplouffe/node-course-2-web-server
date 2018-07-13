@@ -56,5 +56,5 @@ app.get('/bad', (req, res) => {
 });
 
 app.listen(PORT, () =>{
-    console.log(`Server running on AndrE ${PORT}!`);
+    console.log(`Server running on port AndrE ${PORT}!`);
 });
