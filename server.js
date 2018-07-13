@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', (req, res) => {
     res.send({
         name: 'Matheu',
@@ -23,4 +25,6 @@ app.get('/bad', (req, res) => {
     });
 });
 
-app.listen(PORT);
+app.listen(PORT, () =>{
+    console.log("Server running on AndrE 3000!");
+});
